@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="拾光细语机灵薯 iOS 应用隐私政策，说明收集哪些数据、如何使用相机/麦克风/相册权限、拍摄的视频如何处理，以及用户如何管理和删除数据。">
+  <title>隐私政策 | 拾光细语机灵薯 App</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #1f2933;
+      --muted: #65717f;
+      --line: #dfe5ec;
+      --paper: #ffffff;
+      --wash: #f6f8fb;
+      --green: #237a57;
+      --green-soft: #e7f5ee;
+      --blue: #315f8f;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+        "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      color: var(--ink);
+      background: var(--wash);
+      line-height: 1.7;
+    }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .topbar { background: var(--paper); border-bottom: 1px solid var(--line); }
+    .topbar-inner, .main {
+      width: min(820px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 0;
+    }
+    .brand-name { margin: 0; font-weight: 700; }
+    .main { padding: 40px 0 64px; }
+    h1 { font-size: 28px; margin: 0 0 8px; }
+    h2 { font-size: 20px; margin: 36px 0 12px; color: var(--ink); }
+    h3 { font-size: 16px; margin: 20px 0 8px; }
+    .meta { color: var(--muted); font-size: 14px; margin-bottom: 8px; }
+    ul { padding-left: 22px; }
+    li { margin: 6px 0; }
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+    .highlight {
+      background: var(--green-soft);
+      border: 1px solid #bfe3d0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+      font-size: 15px;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: var(--wash); font-weight: 600; }
+    .footer {
+      border-top: 1px solid var(--line);
+      background: var(--paper);
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .footer-inner {
+      width: min(820px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+    code {
+      background: var(--wash);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <p class="brand-name">拾光细语机灵薯 App</p>
+    </div>
+  </header>
+
+  <main class="main">
+    <h1>隐私政策</h1>
+    <p class="meta">最后更新：2026 年 7 月 24 日</p>
+    <p class="meta">适用范围：拾光细语机灵薯 iOS 应用（以下简称"本应用"）</p>
+
+    <p>本应用由<strong>北京拾光细语文化有限公司</strong>（以下简称"我们"）开发和运营，是一款面向自媒体创作者的口播视频拍摄辅助工具。你在电脑端完成文案撰写后，可在本应用中借助悬浮提词器一边查看提词文稿、一边录制口播视频，并将成片保存到手机本地相册，供你自行进行后续剪辑。我们重视你的隐私，本政策说明本应用收集哪些数据、如何使用相机/麦克风/相册权限、拍摄的视频如何处理，以及你如何管理和删除这些数据。</p>
+
+    <div class="card highlight">
+      <h3 style="margin-top:0">一句话要点</h3>
+      <p style="margin-bottom:0">你用本应用<strong>拍摄的口播视频只保存在你手机的本地相册，不会上传到我们的服务器</strong>。相机和麦克风仅在你进入拍摄页并录制时使用；相册权限仅用于把你拍好的视频写入相册。</p>
+    </div>
+
+    <h2>1. 我们收集哪些数据</h2>
+    <p>本应用仅在你主动使用相关功能时，收集为提供功能所必需的数据：</p>
+    <table>
+      <thead>
+        <tr><th>数据类型</th><th>具体内容与用途</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>手机号与短信验证码</td><td>用于账号注册登录与账号安全验证；短信验证码由短信服务商发送</td></tr>
+        <tr><td>账号身份信息</td><td>你在机灵薯服务的账号标识、昵称等基本资料</td></tr>
+        <tr><td>认证信息</td><td>登录令牌（token），保存在本机 iOS 钥匙串中，用于维持你的登录状态</td></tr>
+        <tr><td>你的口播文稿</td><td>为提供提词拍摄，本应用会从我们的服务器读取<strong>你本人此前在机灵薯创建的口播文稿</strong>用于展示与提词；本应用不在手机端新增或编辑文稿</td></tr>
+        <tr><td>相机与麦克风（音视频）</td><td>仅在你进入拍摄页并授权后，用于实时预览与录制口播视频；未进入拍摄或未授权时不会采集</td></tr>
+        <tr><td>本地拍摄偏好与记录</td><td>提词字号、滚动速度等偏好，以及拍摄时长、重拍次数等本地记录，仅保存在你本机、用于改善拍摄体验，不上传服务器</td></tr>
+      </tbody>
+    </table>
+
+    <h2>2. 关于系统权限</h2>
+    <p>本应用会在你首次使用相关功能时向你申请以下权限，你可以随时在 iOS「设置」中关闭：</p>
+    <table>
+      <thead>
+        <tr><th>权限</th><th>用途</th><th>说明</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>相机</td><td>录制口播视频</td><td>仅在拍摄页使用，用于预览和录制画面</td></tr>
+        <tr><td>麦克风</td><td>录制口播视频中的声音</td><td>仅在录制时采集</td></tr>
+        <tr><td>相册（仅写入）</td><td>把你拍好的视频保存到相册</td><td>仅在你点击"保存到相册"时写入；本应用<strong>不读取</strong>你相册里的其他照片或视频</td></tr>
+      </tbody>
+    </table>
+
+    <h2>3. 拍摄的视频如何处理</h2>
+    <ul>
+      <li>录制过程中，视频临时存放在本应用的本机缓存中；</li>
+      <li>你点击"保存到相册"后，视频被写入你手机的<strong>本地相册</strong>；</li>
+      <li>本应用<strong>不会</strong>将你录制的视频上传到我们的服务器，也不会与任何第三方共享；</li>
+      <li>你重拍或退出后，未保存的临时视频会被清除。</li>
+    </ul>
+
+    <h2>4. 数据如何存储与传输</h2>
+    <ul>
+      <li><strong>本地存储：</strong>登录令牌保存在 iOS 钥匙串；提词偏好与本地拍摄记录保存在本机应用存储中。</li>
+      <li><strong>服务端交互：</strong>登录、读取你的口播文稿等请求，通过 HTTPS 加密传输至我们的服务器（<code>https://jilingshu.top</code>）。</li>
+      <li>本应用与服务器之间的数据传输均采用加密连接。</li>
+    </ul>
+
+    <h2>5. 数据与第三方共享</h2>
+    <p>本应用在提供功能过程中会用到以下第三方服务，它们仅按我们的指示、在实现功能所必需的范围内处理数据：</p>
+    <ul>
+      <li><strong>短信服务商</strong>（阿里云）——用于向你发送登录短信验证码；</li>
+      <li><strong>云服务器与云存储服务商</strong>（阿里云）——用于运行我们的后端服务与存储必要数据。</li>
+    </ul>
+    <p>除上述为实现功能所必需的服务商外，除非获得你的明确同意或法律法规另有要求，我们不会向任何第三方共享你的个人数据。我们<strong>不会出售</strong>你的个人数据，也不会将其用于广告定向或资信评估。</p>
+
+    <h2>6. 你的权利</h2>
+    <ul>
+      <li>你可以随时在 iOS「设置」中关闭本应用的相机、麦克风或相册权限；</li>
+      <li>你可以在本应用「设置」页中<strong>注销账号</strong>，注销后你的账号数据将被删除或匿名化，手机号可重新注册；</li>
+      <li>你可以随时退出登录，或从手机上卸载本应用以清除本机保存的数据；</li>
+      <li>你可以通过下方联系方式，要求我们查询、更正或删除你的个人数据，或撤回此前给予的同意。</li>
+    </ul>
+
+    <h2>7. 未成年人</h2>
+    <p>本应用面向成年自媒体创作者，不面向 14 周岁以下儿童。若你是未成年人，请在监护人指导下使用，并在监护人同意后向我们提供个人信息。</p>
+
+    <h2>8. 隐私政策的更新</h2>
+    <p>我们可能根据产品、法律或运营需要更新本政策。更新后的政策会通过本页面或应用内合理方式提示。你在更新后继续使用本应用，视为你接受更新后的政策。</p>
+
+    <h2>9. 联系我们</h2>
+    <p>如对本隐私政策或你的数据有任何疑问，或希望删除你的数据，请联系：</p>
+    <p>邮箱：<a href="mailto:383648539@qq.com">383648539@qq.com</a><br>
+    主体：北京拾光细语文化有限公司</p>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>Copyright © 2026 北京拾光细语文化有限公司</span>
+    </div>
+  </footer>
+</body>
+</html>
